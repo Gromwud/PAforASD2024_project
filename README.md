@@ -30,7 +30,7 @@ pip install numpy scikit-learn matplotlib
 ```
 
 ### Dataset
-The project uses a synthetic dataset generated with the `make_blobs` function from `sklearn`. The dataset is included in the files `X.npy` (data) and `y.npy` (labels).
+The project uses a synthetic dataset generated with the `make_blobs` function from `sklearn` (1kk samples). The dataset is included in the files `X.npy` (data) and `y.npy` (labels).
 
 You can generate your own dataset using `generate_dataset.py`.
 
