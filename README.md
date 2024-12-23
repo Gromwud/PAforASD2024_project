@@ -22,7 +22,7 @@ The parallel implementation uses **Python's multiprocessing library**, dividing 
   - `sklearn`
   - `time`
   - `multiprocessing`
-  - `matplotlib` (for optional visualization)
+  - `matplotlib`
 
 Install dependencies using pip:
 ```bash
@@ -73,6 +73,3 @@ The following figure demonstrates the dependency between the number of processes
 
 ### Visualization
 ![comp_graph](kmeans_speedup_comparison.png)
-```
-
-
