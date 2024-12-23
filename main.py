@@ -67,12 +67,14 @@ def benchmark_kmeans(X, n_clusters):
     start_time = time()
     kmeans(X, n_clusters)
     non_parallel_times.append(time() - start_time)
+    print("Non-Parallel: ", non_parallel_times[-1])
 
     # Measure time for the parallel version with varying workers
     for n_processes in workers:
         start_time = time()
         kmeans_parallel(X, n_clusters, n_processes=n_processes)
         parallel_times.append(time() - start_time)
+        print("Parallel, Workers {}:".format(n_processes), parallel_times[-1])
 
     # Plot results
     plt.figure(figsize=(10, 6))
